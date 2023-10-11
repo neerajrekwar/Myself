@@ -81,11 +81,17 @@ button:hover {
 }
 
 .viewBox{
-    
+    display: flex;
     height: 50vh;
     border: 2px solid yellowgreen;
+    justify-content: space-around;
+    align-items: center;
 }
 .viewBox div{
     border: 2px solid gray;
-    display: flex;
+    
+}
+img{
+    height: 133px;
+    width: 100%;
 }
