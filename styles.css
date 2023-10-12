@@ -16,6 +16,8 @@ body {
     background-position: center;
     object-fit: fill;
     background-size: cover;
+    -o-object-fit: cover;
+    background-attachment: fixed;
 }
 header {
     color: #404040;
@@ -124,3 +126,28 @@ h3 {
     color: #555;
 
 }
+
+@media screen and (max-width: 767px) {
+    nav {
+      display: none;
+      font-size: 2em 100px / 1em 50px;
+    }
+    body {
+      background: rgba(0, 3, 7, 0.753);
+      background-image: url(assets/images/bg-image.svg);
+      width: 100%;
+      -o-object-fit: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      object-fit: fill;
+    }
+  }
+  @media screen and (min-width: 767px) and (max-width: 1023px) {
+    
+  }
+  
+  @media screen and (min-width: 1024px) {
+    
+  }
