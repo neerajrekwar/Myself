@@ -19,10 +19,16 @@ body {
     -o-object-fit: cover;
     background-attachment: fixed;
 }
+
 header {
+    display: flex;
+    justify-content: space-around;
     color: #404040;
     padding: 10px 0;
-    text-align: center;
+}
+
+.logo {
+    font-size: 2em;
 }
 
 nav ul {
@@ -92,22 +98,26 @@ button:hover {
 }
 
 .viewBox {
-    display: flex;
+    display: inline-flex;
     height: 50vh;
     /* border: 2px solid yellowgreen; */
     justify-content: space-around;
     align-items: center;
 }
-.viewBox div{
+
+.viewBox div {
     border: 2px solid green;
+    height: 100%;
+    width: 100%;
 }
+
 .viewBox .pic {
     display: flex;
 }
 
 img {
-    height: 133px;
     width: 100%;
+    height: auto;
 }
 
 .proflie_text {
@@ -132,25 +142,60 @@ h3 {
 
 @media screen and (max-width: 767px) {
     nav {
-      display: none;
-      font-size: 2em 100px / 1em 50px;
+        display: none;
+        font-size: 2em 100px / 1em 50px;
     }
+
     body {
-      background: rgba(0, 3, 7, 0.753);
-      background-image: url(assets/images/bg-image.svg);
-      width: 100%;
-      -o-object-fit: cover;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position: center;
-      object-fit: fill;
+        background: rgba(0, 3, 7, 0.753);
+        background-image: url(assets/images/bg-image.svg);
+        width: 100%;
+        -o-object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        object-fit: fill;
     }
-  }
-  @media screen and (min-width: 767px) and (max-width: 1023px) {
-    
-  }
-  
-  @media screen and (min-width: 1024px) {
-    
-  }
+
+    .viewBox {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 50vh;
+        /* border: 2px solid yellowgreen; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .viewBox div {
+        border: 2px solid green;
+        height: 100%;
+        width: 100%;
+    }
+
+    .viewBox .pic {
+        display: flex;
+    }
+
+    img {
+        text-align: center;
+        width: 200px;
+        height: auto;
+    }
+
+    .viewBox .pic {
+        display: flex;
+        justify-content: space-around;
+        background-image: url(/assets/images/blob-pic-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: fill;
+        background-size: contain;
+        -o-object-fit: fill;
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {}
+
+@media screen and (min-width: 1024px) {}
