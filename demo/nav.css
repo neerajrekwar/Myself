@@ -1,0 +1,115 @@
+* {
+
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: #edf3b5;
+}
+
+.navigation {
+    padding: 3rem;
+    max-width: 1200px;
+    display: flex;
+    gap: clamp(2rem, 8vw, 4rem);
+}
+
+button {
+    background: transparent;
+    border: 10px solid var(--button-color, #404040);
+    border-radius: 1rem;
+}
+
+.button-one {
+
+    --button-color: #a59d2c;
+}
+
+.button-one .line {
+    transition:
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms;
+    transform-origin: center;
+}
+
+.button-one:hover .line {
+    transition:
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms;
+
+}
+
+.button-one:hover :is(.top, .bottom) {
+    y: 45;
+}
+
+.button-one:hover .top {
+    rotate: 90deg;
+}
+
+.button-one:hover .middle {
+    opacity: 0;
+}
+
+/* // button two */
+
+.button-two .hamburger {
+    --button-color: #cadb31;
+    transform-origin: center;
+}
+
+.button-two :is(.top, .bottom) {
+    animation: to-open-icon 1s forwards;
+}
+
+.button-two:hover :is(.top, .bottom) {
+    animation: to-close-icon 1s forwards;
+}
+.button-two .line.top{
+    --rotation: 133deg;
+    transform-origin: 46px 45px;
+}
+
+.button-two .line.bottom{
+    --rotation: 45deg;
+    transform-origin: 60px 55px;
+}
+
+
+@keyframes to-open-icon {
+    0%{stroke-dashoffset: 0;}
+    100%{stroke-dashoffset: 59.9;}
+    60%{ stroke-dashoffset: 79.9; rotate: var(--rotation);}
+    100%{ stroke-dashoffset: 0; rotate: var(--rotation);}
+}
+
+@keyframes to-close-icon {
+    0%{stroke-dashoffset: 0;rotate: var(--rotation);}
+    100%{stroke-dashoffset: 79.9;rotate: var(--rotation);}
+    60%{ stroke-dashoffset: 79.9; }
+    100%{ stroke-dashoffset: 0; }
+} 
+
+.button-three{
+    --button-color: #000;
+}
+
+.button-three .hamburger{
+    transition: translate 1s, rotate 1s; 
+}
+.button-three[aria-expanded="true"] .hamburger{
+    translate: 10px -10px;
+}
+.button-three .line{
+    transition: 1s;
+    stroke-dasharray: 60 31 60 300;
+}
+.button-three[aria-expanded="true"] .line{
+    stroke-dasharray: 60 105 60 300;
+    stroke-dashoffset: -90;
+}
