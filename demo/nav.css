@@ -109,7 +109,4 @@ button {
     transition: 1s;
     stroke-dasharray: 60 31 60 300;
 }
-.button-three[aria-expanded="true"] .line{
-    stroke-dasharray: 60 105 60 300;
-    stroke-dashoffset: -90;
 }
