@@ -19,7 +19,7 @@ body {
 
 button {
     background: transparent;
-    border: 1px solid var(--button-color, #404040);
+/*  border: 1px solid var(--button-color, #404040); */
     border-radius: 2px;
 }
 
