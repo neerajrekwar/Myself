@@ -133,11 +133,19 @@ ul li{
 .main-menu-mini{
     display: none;
 }
-.navbar, ul {
+.navbar ul {
     display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+ul li{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
 }
 .navbar li a{
     padding: 10px;
+    color: azure;
 }
 li a:hover{
     color: #ffffff;
@@ -163,5 +171,6 @@ li a:hover{
         background-color: #333333e3;
         backdrop-filter: blur(4px);
         width: 100%;
+        height: 100%;
     }
 }
