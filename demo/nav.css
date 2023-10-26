@@ -133,7 +133,7 @@ ul li{
 .main-menu-mini{
     display: none;
 }
-.navbar {
+.navbar, ul {
     display: flex;
 }
 .navbar li a{
