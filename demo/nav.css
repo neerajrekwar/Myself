@@ -61,6 +61,7 @@ button {
 .button-two .hamburger {
     --button-color: #cadb31;
     transform-origin: center;
+    
 }
 
 .button-two :is(.top, .bottom) {
@@ -71,13 +72,13 @@ button {
     animation: to-close-icon 1s forwards;
 }
 .button-two .line.top{
-    --rotation: 133deg;
-    transform-origin: 46px 45px;
+    --rotation: 45deg;
+    transform-origin: 45px 45px;
 }
 
 .button-two .line.bottom{
-    --rotation: 45deg;
-    transform-origin: 60px 55px;
+    --rotation: -45deg;
+    transform-origin: 45px 60px;
 }
 
 
@@ -102,14 +103,14 @@ button {
 .button-three .hamburger{
     transition: translate 1s, rotate 1s; 
 }
-.button-three:hover .hamburger{
+.button-three[aria-expanded="true"] .hamburger{
     translate: 10px -10px;
 }
 .button-three .line{
     transition: 1s;
     stroke-dasharray: 60 31 60 300;
 }
-.button-three:hover .line{
+.button-three[aria-expanded="true"] .line{
     stroke-dasharray: 60 105 60 300;
     stroke-dashoffset: -90;
 }
