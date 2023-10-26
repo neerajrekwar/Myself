@@ -1,10 +1,10 @@
-const buttonThree = document.querySelectorAll('.button-three');
+const buttonThree = document.querySelector('.button-three');
 
- buttonThree.forEach('click', () => {
+buttonThree.addEventListener('click', () => {
     const isOpened = buttonThree.getAttribute('aria-expanded');
     if (isOpened === 'false') {
         buttonThree.setAttribute('aria-expanded', 'true');
     } else {
         buttonThree.setAttribute('aria-expanded', 'false');
     }
- }) 
+})

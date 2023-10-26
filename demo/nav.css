@@ -41,7 +41,6 @@ button {
         y 300ms ease-in,
         rotate 300ms ease-in 300ms,
         opacity 0ms 300ms;
-
 }
 
 .button-one:hover :is(.top, .bottom) {
