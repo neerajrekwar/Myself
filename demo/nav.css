@@ -147,6 +147,8 @@ li a:hover{
     .main-menu-mini{
         display: flex;
     }
+    .navbar ul{
+    }
     .navbar{
         display: none;
     }
@@ -154,8 +156,8 @@ li a:hover{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60px;
-        left: 20px;
+        top: 0;
+        left: 0;
         background-color: #333;
         width: 100%;
     }
