@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav.css">
-    
+
     <title>navigation</title>
 </head>
 
 <body>
-    <nav class="navigation">
-        <!-- button one -->
+    <!--  <nav class="navigation">
+         button one 
         <button class="button-one" aria-controls="primary-navigation" aria-expanded="false">
             <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="250">
                 <rect class="line top" width="80" height="10" x="10" y="23" rx="5"></rect>
@@ -19,7 +19,7 @@
                 <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
             </svg>
         </button>
-        <!-- button two -->
+         button two
         <button class="button-two" aria-controls="primary-navigation" aria-expanded="false">
             <svg stroke="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="250">
                 <line class="line top" x1="90" x2="10" y1="40" y2="40" stroke-width="10" stroke-linecap="round"
@@ -28,8 +28,8 @@
                     stroke-dasharray="80" storke-dashoffset="0"></line>
             </svg>
         </button>
-          <!-- button two -->
-          <button class="button-three" aria-controls="primary-navigation" aria-expanded="false">
+           button two 
+           <button class="button-three" aria-controls="primary-navigation" aria-expanded="false">
             <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120" width="250">
               <path class="line" stroke-width="10"
               stroke-linecap="round"
@@ -38,8 +38,36 @@
               >
               </path>
             </svg>
-          </button>
-    </nav>
+          </button> 
+    </nav>  -->
+
+    <main>
+        <div class="nav-box">
+            <a href="#">logo</a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">works</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="main-menu">
+                <a href="#">Sigh In</a>
+                <a href="#">Register</a>
+                <div class="main-menu-mini">
+                    <button class="button-three"  aria-controls="primary-navigation" aria-expanded="false">
+                        <svg stroke="var(--button-color)" fill="none" class="hamburger" viewBox="-10 -10 120 120"
+                            width="25">
+                            <path class="line" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"
+                                d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 80">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
     <script type="module" src="nav.js"></script>
 </body>
 
