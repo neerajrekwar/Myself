@@ -134,7 +134,6 @@ ul li{
     display: none;
 }
 .navbar ul {
-    display: flex;
     width: 70%;
     margin: 0 auto;
 }
