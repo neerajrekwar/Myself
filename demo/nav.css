@@ -142,6 +142,8 @@ ul li{
     display: flex;
     width: 100%;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 .navbar li a{
     padding: 10px;
@@ -164,6 +166,8 @@ li a:hover{
     }
     .navbar.active{
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         position: absolute;
         top: 0;
